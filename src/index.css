@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-book: 'Lora', Garamond, serif;
+    --font-title: 'Cinzel', serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+}
+
+.font-serif-custom {
+  font-family: var(--font-serif);
+}
+
+.font-book-custom {
+  font-family: var(--font-book);
+}
+
+.font-title-custom {
+  font-family: var(--font-title);
+}
+
+/* Realistic paper texture overlay */
+.paper-texture {
+  background-color: #faf7f2;
+  background-image: radial-gradient(#ece4d8 1px, transparent 1px), radial-gradient(#f0e9df 1px, #faf7f2 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Dark book paper */
+.paper-texture-dark {
+  background-color: #1a1918;
+  background-image: radial-gradient(#262422 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Page spine gutter shadow */
+.spine-shadow-left {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.08) 5%, rgba(0, 0, 0, 0.02) 15%, transparent 35%);
+}
+
+.spine-shadow-right {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.08) 5%, rgba(0, 0, 0, 0.02) 15%, transparent 35%);
+}
+
+/* Center book crease */
+.book-spine-crease {
+  box-shadow: inset 18px 0 25px -10px rgba(0, 0, 0, 0.4), inset -18px 0 25px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom scrollbar for drawer/TOC */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}

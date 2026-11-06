@@ -1,0 +1,6 @@
+{
+  "name": "FlipBook 3D & HTML5 Studio",
+  "description": "Buku PDF interaktif dengan efek realistis membuka buku 3D, animasi balik halaman mulus (page curl), suara lembaran kertas otentik, dan pembaca PDF FlipHTML5 modern.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
